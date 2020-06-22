@@ -5,12 +5,16 @@ It allows for the use of extensions or ext at any point in the code.
 The only requirment is for the input/string to contain three characters with the option of having spaces in between, but not symbols or alpha numericals.
 
 Feel free to let me know if this code can be improved.
-```
-Code:
-^[\W\d]*(?:\s*\d\s*){3,}(?:\W*ext(ension)*\W*\d*)*$
 
-Explanation attached in file.
-Explanation:
+##Code:
+```
+^[\W\d]*(?:\s*\d\s*){3,}(?:\W*ext(ension)*\W*\d*)*$
+```
+##Test it out:
+regexr.com/5753o
+
+##Explanation:
+```
 ^             = Beginning. Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled.
 [             = Character set. Match any character in the set.
   \W          = Not word. Matches any character that is not a word character (alphanumeric & underscore).
@@ -41,5 +45,3 @@ Explanation:
 *             = Quantifier. Match 0 or more of the preceding token.
 $             = End. Matches the end of the string, or the end of a line if the multiline flag (
 ```
-Test it out:
-regexr.com/5753o
