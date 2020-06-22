@@ -6,6 +6,12 @@ The only requirment is for the input/string to contain at least 3 digits with th
 
 Feel free to let me know if this code can be improved.
 
+
+### To edit this to work for a Mobile Number that is 11 digits long use this code:
+```
+^(?:\W*\s*\d\s*\W*){11}
+```
+
 ## Code:
 ```
 ^(?:\W*\s*\d\s*\W*){3,}(?:\W*ext(ension)*\W*\d*)*$
