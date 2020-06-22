@@ -8,7 +8,7 @@ Feel free to let me know if this code can be improved.
 
 ## Code:
 ```
-^[\W\d]*(?:\s*\d\s*){3,}(?:\W*ext(ension)*\W*\d*)*$
+^(?:\W*\s*\d\s*\W*){3,}(?:\W*ext(ension)*\W*\d*)*$
 ```
 ## Test it out:
 [https://Regexr.com/5753o](https://Regexr.com/5753o)
@@ -16,17 +16,16 @@ Feel free to let me know if this code can be improved.
 ## Explanation:
 ```
 ^             = Beginning. Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled.
-[             = Character set. Match any character in the set.
-  \W          = Not word. Matches any character that is not a word character (alphanumeric & underscore).
-  \d          = Digit. Matches any digit character (0-9).
-]             = End of character set.
-*             = Quantifier. Match 0 or more of the preceding token.
 
 (?:           = Non-capturing group. Groups multiple tokens together without creating a capture group.
+  \W          = Not word. Matches any character that is not a word character (alphanumeric & underscore).
+  *           = Quantifier. Match 0 or more of the preceding token.
   \s          = Whitespace. Matches any whitespace character (spaces, tabs, line breaks).
   *           = Quantifier. Match 0 or more of the preceding token.
   \d          = Digit. Matches any digit character (0-9).
   \s          = Whitespace. Matches any whitespace character (spaces, tabs, line breaks).
+  *           = Quantifier. Match 0 or more of the preceding token.
+  \W          = Not word. Matches any character that is not a word character (alphanumeric & underscore).
   *           = Quantifier. Match 0 or more of the preceding token.
 )             = End of Non-capturing group.
 {3,}          = Quantifier. Match 3 or more of the preceding token.
