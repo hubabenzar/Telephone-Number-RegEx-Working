@@ -12,7 +12,7 @@ Feel free to let me know if this code can be improved.
 ```
 ## Test it out:
 Telephone Number RegEx Working
-[Regexr.com/5753o](regexr.com/5753o).
+Regexr.com/5753o
 
 
 ## Explanation:
