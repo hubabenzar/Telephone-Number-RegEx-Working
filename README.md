@@ -11,7 +11,7 @@ Feel free to let me know if this code can be improved.
 ^[\W\d]*(?:\s*\d\s*){3,}(?:\W*ext(ension)*\W*\d*)*$
 ```
 ## Test it out:
-Regexr.com/5753o
+```Regexr.com/5753o```
 
 
 ## Explanation:
