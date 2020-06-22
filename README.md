@@ -6,14 +6,14 @@ The only requirment is for the input/string to contain three characters with the
 
 Feel free to let me know if this code can be improved.
 
-##Code:
+## Code:
 ```
 ^[\W\d]*(?:\s*\d\s*){3,}(?:\W*ext(ension)*\W*\d*)*$
 ```
-##Test it out:
+## Test it out:
 regexr.com/5753o
 
-##Explanation:
+## Explanation:
 ```
 ^             = Beginning. Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled.
 [             = Character set. Match any character in the set.
