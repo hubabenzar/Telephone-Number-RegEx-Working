@@ -2,7 +2,7 @@
 This Regular Expression (RegEX) is my solution to a telephone number that is flexible to be used by most people.
 
 It allows for the use of extensions or ext at any point in the code.
-The only requirment is for the input/string to contain three characters with the option of having spaces in between, but not symbols or alpha numericals.
+The only requirment is for the input/string to contain at least 3 digits with the option of having spaces in between and symbols, but not alpha numericals.
 
 Feel free to let me know if this code can be improved.
 
